@@ -1,0 +1,107 @@
+
+hr {
+    border-style: none;
+    border-top-style: ridge;
+    border-width: 4px;
+    width: 100%;
+}
+
+
+h1 {
+    font-style: normal;
+    color: rgb(253, 254, 254);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+h3 {
+    font-style: normal;
+    color: rgb(253, 254, 254);
+    border-radius: 20px;
+    padding: 10px 15px;
+	font-size: 33px;
+}
+#main{
+    font-style: normal;
+}
+.head{
+    display: flex;
+    justify-content:space-around;
+    margin-bottom: 30px;
+    padding: 40px;
+    align-items: center;
+
+}
+.item1{
+    display: flex;
+    justify-content: center;
+    align-self:center;
+    flex-direction: column;
+
+}
+b{
+    color: crimson;
+    font-size: 90px;
+}
+.container{
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+span{
+    color:rgb(14, 14, 14);
+    font-size: 70px;
+    font-weight: bold;
+}
+.item{
+	margin: 30px;
+	width: 600px;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+    box-shadow: 10px 10px 20px black;
+    background-color:rgb(78, 79, 79);
+    background: linear-gradient(60deg, rgb(101, 101, 102) 0%, #9e9f9f 100%);
+    
+}
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: normal;
+    text-align: center;
+    font-weight: lighter;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(12, 11, 11);
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    /* background-color:rgb(33, 40, 241);
+    background: linear-gradient(60deg, rgb(35, 74, 233) 0%, #a9bacb 100%); */
+
+/
+
+    
+} 
+.img{
+    border-radius: 80px;
+} 
+
+a
+{
+    text-decoration: none;
+}
+    
+#name {
+    flex: 1;
+    color: #201e1e;
+    border: 1px solid;
+    padding: 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease-out;
+    border-radius: 20px;
+}
