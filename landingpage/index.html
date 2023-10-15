@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior design</title>
+    <link rel="shortcut icon" href="home.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0, 0.5),rgb(0,0,0,0.80)),url(bgpic.png);
+            background-size: cover;
+            background-position: center;
+            overflow: auto;
+            
+        }
+        .navbox{
+            width: 100%;
+            height:5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        .logo{
+             width: 15%;
+             height: 70%;
+             flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo h2{
+            font-size: 50px;
+            font-weight: bold;
+            color: azure;
+        }
+        a{
+            text-decoration: none;
+            color: azure;
+        }
+        .items{
+            width: 45%;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            align-items: center;
+           
+
+        }
+        
+    
+        .section{
+            width:60rem;
+            height:30rem;
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items: center;
+            gap: 30px;
+            
+
+        }
+        .section p{
+            font-size: 400%;
+            font-weight: bold;
+            color: azure;
+
+        }
+        .txt{
+            text-align: center;
+            width: 80%;
+            color: azure;
+            line-height: 25px;
+            font-size: 20px;
+        }
+        .hero{
+            width: 100%;
+            height: 50rem;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-around;
+            align-items: center;
+            
+
+            
+        }
+        .end{
+            width: 80%;
+            height: 30%;
+            display: flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+        }
+        .item{
+            width: 30%;
+            height: 40%;
+            border-radius: 35px;
+            text-align: center;
+            font-weight: bold;
+            color: azure;
+            font-size: 25px;
+            border:solid aqua;
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items: center;
+
+        }
+        .link{
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items: center;
+            gap: 50px;
+
+        }
+        .link li{
+            list-style: none;
+            display: inline-block;
+            color: azure;
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+           
+
+
+        }
+
+        .link li::after{
+            content:'';
+            height: 3px;
+            width: 0%;
+            position:absolute;
+            left: 0;
+            bottom: -10px;
+            transition:all 0.5s;
+            
+
+
+        }
+        .link li:hover::after{
+            background: aqua;
+            min-width: 100%;
+            max-width: 0%;
+        }
+        .item::after{
+            transition: all 0.5s;
+            position: absolute;
+            border-color: rgb(13, 0, 255);
+            top: 0px;
+
+        }
+        .item:hover:after{
+            border-color: rgb(13, 0, 255);
+        }
+        .end button::after{
+            
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items: center;
+        }
+
+        button{
+            background: transparent;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="navbox">
+                <div class="logo">
+                    <h2>Architect</h2>
+                </div>
+                <div class="items">
+                    <ul class="link" >
+                        <li><a href="#">HOME</a></li>
+                        <li><a href="#">BEDROOM</a></li>
+                        <li><a href="#">DINING</a></li>
+                        <li><a href="#">KITCHEN</a></li>
+                        <li><a href="#">backyard</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </nav>
+        <div class="hero">
+            <section class="section">
+                <p>DESIGN YOUR HOUSE</p>
+                <div class="txt">
+                    An interior is the natural projection of the soul <br>Your home should tell the story of who you are <br>
+                    be a collection of what you love
+                </div>
+                <div class="end">
+                    <button type="button" class="item">COMMERCIAL</button>
+                    <button type="button" class="item">OFFICE</button>
+                    <button type="button" class="item">RESIDENTIAL</button>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+</body>
+</html>
